@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 import Image from "next/image";
 
 export default function MainCat() {
@@ -11,10 +7,7 @@ export default function MainCat() {
       <div className="border-b border-black w-full mb-4"></div>
       <div>
         <div className="grid grid-cols-4 grid-rows-2 gap-4 h-[600px]">
-          <motion.div
-            whileHover={{ scale: 1.05, zIndex: 1, rotate: 2 }}
-            className="hover:grayscale flex justify-center items-center text-2xl relative"
-          >
+          <div className="bg-slate-300 flex justify-center items-center text-2xl relative">
             <Image
               src={
                 "https://images.pexels.com/photos/2537658/pexels-photo-2537658.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -25,12 +18,9 @@ export default function MainCat() {
               className="w-full h-full object-cover"
             />
             <h2 className="absolute text-2xl font-bold text-white">T-shirts</h2>
-          </motion.div>
+          </div>
 
-          <motion.div
-            whileHover={{ scale: 1.05, zIndex: 1, rotate: 2 }}
-            className="hover:grayscale flex justify-center items-center text-2xl row-span-2 relative"
-          >
+          <div className="bg-slate-300 flex justify-center items-center text-2xl row-span-2 relative">
             <Image
               src={
                 "https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -41,12 +31,9 @@ export default function MainCat() {
               className="w-full h-full object-cover"
             />
             <h2 className="absolute text-2xl font-bold text-white">Dresses</h2>
-          </motion.div>
+          </div>
 
-          <motion.div
-            whileHover={{ scale: 1.05, zIndex: 1, rotate: 2 }}
-            className="hover:grayscale flex justify-center items-center text-2xl col-span-2 relative"
-          >
+          <div className="bg-slate-300 flex justify-center items-center text-2xl col-span-2 relative">
             <Image
               src={
                 "https://images.pexels.com/photos/4091200/pexels-photo-4091200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -57,12 +44,9 @@ export default function MainCat() {
               className="w-full h-full object-cover"
             />
             <h2 className="absolute text-2xl font-bold text-white">Sweaters</h2>
-          </motion.div>
+          </div>
 
-          <motion.div
-            whileHover={{ scale: 1.05, zIndex: 1, rotate: -2 }}
-            className="hover:grayscale flex justify-center items-center text-2xl "
-          >
+          <div className="bg-slate-300 flex justify-center items-center text-2xl ">
             <Image
               src={
                 "https://images.pexels.com/photos/1317712/pexels-photo-1317712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -73,12 +57,9 @@ export default function MainCat() {
               className="w-full h-full object-cover"
             />
             <h2 className="absolute text-2xl font-bold text-white">Jackets</h2>
-          </motion.div>
+          </div>
 
-          <motion.div
-            whileHover={{ scale: 1.05, zIndex: 1, rotate: -2 }}
-            className="hover:grayscale flex justify-center items-center text-2xl "
-          >
+          <div className="bg-slate-300 flex justify-center items-center text-2xl ">
             <Image
               src={
                 "https://images.pexels.com/photos/14663127/pexels-photo-14663127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -89,12 +70,9 @@ export default function MainCat() {
               className="w-full h-full object-cover"
             />
             <h2 className="absolute text-2xl font-bold text-white">Skirts</h2>
-          </motion.div>
+          </div>
 
-          <motion.div
-            whileHover={{ scale: 1.05, zIndex: 1, rotate: 2 }}
-            className="hover:grayscale flex justify-center items-center text-2xl "
-          >
+          <div className="bg-slate-300 flex justify-center items-center text-2xl ">
             <Image
               src={
                 "https://images.pexels.com/photos/10638564/pexels-photo-10638564.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -105,7 +83,7 @@ export default function MainCat() {
               className="w-full h-full object-cover"
             />
             <h2 className="absolute text-2xl font-bold text-white">Shirts</h2>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
