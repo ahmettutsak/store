@@ -8,20 +8,18 @@ import { motion } from "framer-motion";
 export default function Slider() {
   const [genislik, setGenislik] = useState(window.innerWidth);
 
-  // Tarayıcı genişliği değiştikçe güncellemek için bir useEffect kullanın
   useEffect(() => {
     const handleResize = () => {
       setGenislik(window.innerWidth);
     };
-
-    // Event Listener'ı ekleyin
     window.addEventListener("resize", handleResize);
 
-    // Component kaldırıldığında event listener'ı kaldırın
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  //TODO?: Slider her geçişte fazladan ilerliyor
 
   return (
     <div className="w-full h-full flex overflow-hidden">
